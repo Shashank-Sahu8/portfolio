@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/main.dart';
 import 'package:my_portfolio/splashs_screen.dart';
+import 'package:flutter/material.dart';
 class NavBar extends StatefulWidget {
   const NavBar({super.key});
 
@@ -29,9 +31,9 @@ class _NavBarState extends State<NavBar> {
             leading: Icon(Icons.home,color: Colors.black,size: 30,),
             title: new Text("Home",style: TextStyle(fontSize: 20),),
             onTap: ()=>{
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>SplashScreen()))
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>thispage()))
             },
-            splashColor: Colors.pink,
+            splashColor: Colors.black87,
           ),
           ListTile(
             leading: Icon(Icons.person,color: Colors.black,size: 30,),

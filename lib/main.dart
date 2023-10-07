@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/navbar.dart';
 import 'package:my_portfolio/splashs_screen.dart';
+import 'package:my_portfolio/contact_me.dart';
+import 'package:my_portfolio/about.dart';
+import 'package:my_portfolio/usefull_links.dart';
 void main()
 {
   runApp(Myapp());
@@ -42,6 +45,26 @@ class _thispageState extends State<thispage> {
       drawer: NavBar(),
       appBar: new AppBar(),
       body:new Container(
+        child: Center(
+          child: Column(
+            children: [
+              new Padding(padding: EdgeInsets.only(top:100.0 ) ,
+              child:new CircleAvatar(
+                backgroundImage: NetworkImage('https://static.vecteezy.com/system/resources/previews/011/675/365/original/man-avatar-image-for-profile-png.png'),
+                backgroundColor: Colors.blue,
+                radius: 90,
+              ),
+    ),
+              new Padding(padding: EdgeInsets.only(top:70.0 ),
+              child:new Text("Shashank Sahu",style: TextStyle(fontSize: 40,color: Colors.white,fontWeight: FontWeight.bold,shadows: [ Shadow(blurRadius: 12.0,color: Colors.blueAccent,offset: Offset(2.3,2.5))]),),
+              ),
+
+              new Padding(padding: EdgeInsets.only(top:50.0 ),
+                child:new Text("App Develpoer",style: TextStyle(fontSize: 30,color: Colors.white,fontWeight: FontWeight.bold,shadows: [ Shadow(blurRadius: 10.0,color: Colors.blueAccent,offset: Offset(2.0,2.0))]),),
+              )
+                ],
+          ),
+        ),
 
         ),
       floatingActionButton: Row(
