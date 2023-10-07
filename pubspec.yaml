@@ -77,8 +77,8 @@ flutter:
   fonts:
      - family: PermanentMarker-Regular
        fonts:
-         - asset: fonts/
-  #       - asset: fonts/Schyler-Italic.ttf
+         - asset: fonts/Creepster-Regular.ttf
+         - asset: fonts/PermanentMarker-Regular.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

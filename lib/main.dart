@@ -48,33 +48,50 @@ class _thispageState extends State<thispage> {
         child: Center(
           child: Column(
             children: [
-              new Padding(padding: EdgeInsets.only(top:100.0 ) ,
+              new Padding(padding: EdgeInsets.only(top:50.0 ) ,
               child:new CircleAvatar(
                 backgroundImage: NetworkImage('https://static.vecteezy.com/system/resources/previews/011/675/365/original/man-avatar-image-for-profile-png.png'),
                 backgroundColor: Colors.blue,
                 radius: 90,
               ),
     ),
-              new Padding(padding: EdgeInsets.only(top:70.0 ),
+              new Padding(padding: EdgeInsets.only(top:50.0 ),
               child:new Text("Shashank Sahu",style: TextStyle(fontSize: 40,color: Colors.white,fontWeight: FontWeight.bold,shadows: [ Shadow(blurRadius: 12.0,color: Colors.blueAccent,offset: Offset(2.3,2.5))]),),
               ),
 
               new Padding(padding: EdgeInsets.only(top:50.0 ),
                 child:new Text("Flutter Develpoer",style: TextStyle(fontSize: 25,color: Colors.white,fontFamily:'Creepster-Regular',fontWeight: FontWeight.bold,shadows: [ Shadow(blurRadius: 10.0,color: Colors.blueAccent,offset: Offset(2.0,2.0))]),),
               ),
+
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  new Padding(padding: EdgeInsets.only(top:10.0 ,left: 25.0),
+                    child:new Text("Know more about me",style: TextStyle(fontSize: 15,color: Colors.white,fontFamily:'Creepster-Regular',fontWeight: FontWeight.bold,shadows: [ Shadow(blurRadius: 10.0,color: Colors.blueAccent,offset: Offset(2.0,2.0))]),),
+                  ),
+                  new Padding(padding: EdgeInsets.only(top:10.0),
+                    child: new IconButton(onPressed:()=>{} , icon: Icon(Icons.arrow_downward,size: 25.0,color: Colors.white,),),
+                  ),
+                ],
+              ),
+              new Padding(padding: EdgeInsets.only(top:3.0 ),
+                child:new IconButton(onPressed:()=>{Navigator.push(context, MaterialPageRoute(builder: (context){return about();}))} , icon: Icon(Icons.account_box,size: 40.0,color: Colors.white,),),
+              ),
+
               new Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  new Padding(padding: EdgeInsets.only(top:90.0),
+                  new Padding(padding: EdgeInsets.only(top:50.0),
                   child: new IconButton(onPressed:()=>{} , icon: Icon(Icons.facebook,size: 30.0,color: Colors.white,),),
                   ),
-                  new Padding(padding: EdgeInsets.only(top:90.0,left: 30),
+                  new Padding(padding: EdgeInsets.only(top:50.0,left: 30),
                     child: new IconButton(onPressed:()=>{} , icon: Icon(Icons.mail,size: 30.0,color: Colors.white,),),
                   ),
-                  new Padding(padding: EdgeInsets.only(top:90.0,left: 30),
+                  new Padding(padding: EdgeInsets.only(top:50.0,left: 30),
                     child: new IconButton(onPressed:()=>{} , icon: Icon(Icons.account_balance,size: 30.0,color: Colors.white,),),
                   ),
-                  new Padding(padding: EdgeInsets.only(top:90.0,left: 30),
+                  new Padding(padding: EdgeInsets.only(top:50.0,left: 30),
                     child: new IconButton(onPressed:()=>{} , icon: Icon(Icons.watch,size: 30.0,color: Colors.white,),),
                   )
                 ],
