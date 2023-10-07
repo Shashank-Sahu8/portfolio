@@ -44,16 +44,22 @@ class _thispageState extends State<thispage> {
       backgroundColor: Colors.black54,
       drawer: NavBar(),
       appBar: new AppBar(),
-      body:new Container(
+      body:new Stack(
+        fit: StackFit.expand,
+        children:[
+          new Image(image: new NetworkImage('https://i.pinimg.com/736x/b9/ce/ce/b9cece2ef70d06aca872a6f3ffe14e36.jpg'),fit: BoxFit.cover,color:Colors.black87 ,colorBlendMode: BlendMode.multiply,),
+          new Container(
         child: Center(
           child: Column(
             children: [
               new Padding(padding: EdgeInsets.only(top:50.0 ) ,
+
               child:new CircleAvatar(
                 backgroundImage: NetworkImage('https://static.vecteezy.com/system/resources/previews/011/675/365/original/man-avatar-image-for-profile-png.png'),
                 backgroundColor: Colors.blue,
                 radius: 90,
               ),
+
     ),
               new Padding(padding: EdgeInsets.only(top:50.0 ),
               child:new Text("Shashank Sahu",style: TextStyle(fontSize: 40,color: Colors.white,fontWeight: FontWeight.bold,shadows: [ Shadow(blurRadius: 12.0,color: Colors.blueAccent,offset: Offset(2.3,2.5))]),),
@@ -76,7 +82,7 @@ class _thispageState extends State<thispage> {
                 ],
               ),
               new Padding(padding: EdgeInsets.only(top:3.0 ),
-                child:new IconButton(onPressed:()=>{Navigator.push(context, MaterialPageRoute(builder: (context){return about();}))} , icon: Icon(Icons.account_box,size: 40.0,color: Colors.white,),),
+                child:new IconButton(onPressed:()=>{Navigator.push(context, MaterialPageRoute(builder: (context){return about();}))} , icon: Icon(Icons.account_box,size: 40.0,color: Colors.white,shadows: [Shadow(blurRadius: 15.0,color: Colors.pink,offset: Offset(1.0,1.0))],),),
               ),
 
               new Row(
@@ -102,6 +108,8 @@ class _thispageState extends State<thispage> {
         ),
 
         ),
+      ],
+    ),
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [

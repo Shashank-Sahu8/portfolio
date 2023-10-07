@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/about.dart';
 import 'package:my_portfolio/main.dart';
 import 'package:my_portfolio/splashs_screen.dart';
 import 'package:flutter/material.dart';
@@ -38,7 +39,7 @@ class _NavBarState extends State<NavBar> {
           ListTile(
             leading: Icon(Icons.person,color: Colors.black,size: 30,),
             title: new Text("About",style: TextStyle(fontSize: 20),),
-            onTap: ()=>{},
+            onTap: ()=>{Navigator.push(context, MaterialPageRoute(builder: (context)=>about()))},
             splashColor: Colors.black87,
           ),
 
