@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:my_portfolio/splashs_screen.dart';
 class NavBar extends StatefulWidget {
   const NavBar({super.key});
 
@@ -13,8 +13,7 @@ class _NavBarState extends State<NavBar> {
     return Drawer(
       backgroundColor: Colors.white70,
       child: ListView(
-        children: [
-          UserAccountsDrawerHeader(
+        children: [UserAccountsDrawerHeader(
               accountName: new Text("Shashank Sahu",style: TextStyle(fontSize: 20,color: Colors.white,fontWeight: FontWeight.bold,shadows: [ Shadow(blurRadius: 5.0,color: Colors.blueAccent,offset: Offset(1.0,1.0))]),),
               accountEmail: new Text("shashanksahu123@gmail.com",style: TextStyle(fontSize: 15,color: Colors.white,shadows: [ Shadow(blurRadius: 5.0,color: Colors.blueAccent,offset: Offset(1.0,1.0))]),),
               currentAccountPicture: CircleAvatar(
@@ -25,7 +24,36 @@ class _NavBarState extends State<NavBar> {
               color:const Color(000000),
               image: new DecorationImage(image: NetworkImage('https://t3.ftcdn.net/jpg/01/23/49/80/360_F_123498067_ufF773Ksk07VpA4s8bovUvH0TAtDSnND.webp',),fit: BoxFit.cover,colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.5), BlendMode.darken),),
             ),
+          ),
+          ListTile(
+            leading: Icon(Icons.home,color: Colors.black,size: 30,),
+            title: new Text("Home",style: TextStyle(fontSize: 20),),
+            onTap: ()=>{
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>SplashScreen()))
+            },
+            splashColor: Colors.pink,
+          ),
+          ListTile(
+            leading: Icon(Icons.person,color: Colors.black,size: 30,),
+            title: new Text("About",style: TextStyle(fontSize: 20),),
+            onTap: ()=>{},
+            splashColor: Colors.black87,
+          ),
+
+          ListTile(
+            leading: Icon(Icons.contacts,color: Colors.black,size: 30,),
+            title: new Text("Contact",style: TextStyle(fontSize: 20),),
+            onTap: ()=>{},
+            splashColor: Colors.black87,
+          ),
+
+          ListTile(
+            leading: Icon(Icons.link,color: Colors.black,size: 30,),
+            title: new Text("Usefull Links",style: TextStyle(fontSize: 20),),
+            onTap: ()=>{},
+            splashColor: Colors.black87,
           )
+
         ],
       ),
     );
