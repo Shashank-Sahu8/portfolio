@@ -43,7 +43,10 @@ class _thispageState extends State<thispage> {
     return new Scaffold(
       backgroundColor: Colors.black54,
       drawer: NavBar(),
-      appBar: new AppBar(),
+      appBar: new AppBar(
+        centerTitle: true,
+        title: new Text("Portfolio",style: TextStyle(fontFamily: 'PermanentMarker-Regular',fontSize: 20,fontWeight: FontWeight.bold,shadows: [Shadow(blurRadius: 10.0,color: Colors.blueGrey,offset: Offset(1.0,1.0))]),),
+      ),
       body:new Stack(
         fit: StackFit.expand,
         children:[
