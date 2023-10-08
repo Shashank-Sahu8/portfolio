@@ -50,7 +50,7 @@ class _thispageState extends State<thispage> {
       body:new Stack(
         fit: StackFit.expand,
         children:[
-          new Image(image: new NetworkImage('https://i.pinimg.com/736x/b9/ce/ce/b9cece2ef70d06aca872a6f3ffe14e36.jpg'),fit: BoxFit.cover,color:Colors.black87 ,colorBlendMode: BlendMode.multiply,),
+          new Image(image: new AssetImage('assets/appd5.jpg'),fit: BoxFit.cover,color:Colors.black87 ,colorBlendMode: BlendMode.multiply,),
           new Container(
         child: Center(
           child: Column(
@@ -58,7 +58,7 @@ class _thispageState extends State<thispage> {
               new Padding(padding: EdgeInsets.only(top:50.0 ) ,
 
               child:new CircleAvatar(
-                backgroundImage: NetworkImage('https://static.vecteezy.com/system/resources/previews/011/675/365/original/man-avatar-image-for-profile-png.png'),
+                backgroundImage: AssetImage('assets/appd6.webp'),
                 backgroundColor: Colors.blue,
                 radius: 90,
               ),
