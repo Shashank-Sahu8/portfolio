@@ -69,7 +69,7 @@ class _thispageState extends State<thispage> {
               ),
 
               new Padding(padding: EdgeInsets.only(top:50.0 ),
-                child:new Text("Flutter Develpoer",style: TextStyle(fontSize: 25,color: Colors.white,fontFamily:'Creepster-Regular',fontWeight: FontWeight.bold,shadows: [ Shadow(blurRadius: 10.0,color: Colors.blueAccent,offset: Offset(2.0,2.0))]),),
+                child:new Text("Flutter Developer",style: TextStyle(fontSize: 25,color: Colors.white,fontFamily:'Creepster-Regular',fontWeight: FontWeight.bold,shadows: [ Shadow(blurRadius: 10.0,color: Colors.blueAccent,offset: Offset(2.0,2.0))]),),
               ),
 
 
